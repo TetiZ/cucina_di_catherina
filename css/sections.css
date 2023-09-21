@@ -1,0 +1,18 @@
+.hero-section {
+  background: linear-gradient(
+    229deg,
+    rgba(111, 102, 102, 0.9) 4.71%,
+    rgba(16, 15, 15, 0.9) 39.77%,
+    rgba(16, 15, 15, 0.9) 44.21%
+  );
+
+  /* box model */
+  width: 1280px;
+  padding: 72px 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* positioning */
+  position: relative;
+}

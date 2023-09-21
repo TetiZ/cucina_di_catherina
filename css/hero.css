@@ -1,19 +1,11 @@
 /* Hero section */
-.hero-section {
-  background: linear-gradient(
-    229deg,
-    rgba(111, 102, 102, 0.9) 4.71%,
-    rgba(16, 15, 15, 0.9) 39.77%,
-    rgba(16, 15, 15, 0.9) 44.21%
-  );
 
-  /* box model */
-  padding: 73px 85px 77px;
-}
+/* 1st half */
 
 .hero-text-half-container {
   padding: 0;
   width: 447px;
+  margin-right: 160px;
 }
 
 .title-container {
@@ -22,20 +14,28 @@
   margin-bottom: 24px;
 }
 
-.vector {
-  stroke: #f3f3f3;
-  stroke-width: 1px;
-}
-
-.hero-title-vector {
-  height: 153px;
-}
-
 .page-title {
   font-size: 64px;
   font-weight: 500;
   line-height: 1.21em;
   text-transform: uppercase;
+  margin-bottom: 24px;
+  margin-left: 12px;
+
+  /* Positioning */
+  position: relative;
+}
+
+.page-title::before {
+  content: "";
+  width: 1px;
+  height: 153px;
+  background-color: #f3f3f3;
+
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  left: -12px;
 }
 
 .page-subtitle {
@@ -59,6 +59,7 @@
   font-size: 30px;
   font-weight: 500;
   line-height: 1.23em;
+  border: none;
   border-radius: 16px;
   background: rgba(188, 26, 26, 0.2);
 
@@ -66,29 +67,51 @@
   display: flex;
   width: 302px;
   height: 77px;
-  padding: 20px 84px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   margin-bottom: 48px;
 }
 
 .hero-text-half-numbers-container {
   display: flex;
-  width: 371px;
+  max-width: 371px;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero-text-half-elem {
+  display: flex;
+  padding: 20px 0;
   gap: 12px;
   align-items: center;
 }
 
-.hero-text-half-numbers {
-  display: flex;
-  padding: 20px 0;
-  flex-basis: 160px;
-  gap: 12px;
-  align-items: center;
+.hero-text-half-elem.first {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.hero-text-half-elem.first::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 1px;
+  height: 78px;
+  background-color: #f3f3f3;
 }
 
 /* 2nd half */
+
+.hero-image {
+  position: absolute;
+  top: 72px;
+  right: 180px;
+  width: 305px;
+  height: 535px;
+
+  transition: 500ms ease;
+}
 
 .hero-list {
   text-transform: uppercase;
@@ -103,11 +126,12 @@
 .main-text {
 }
 
-.contact-list {
+/* social-media */
+
+.contact-list-el:not(:last-child) {
+  margin-bottom: 32px;
 }
 
-.contact-list-el {
-}
-
-.contact-link {
+.sm-icon {
+  fill: #f3f3f3;
 }

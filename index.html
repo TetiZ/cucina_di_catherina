@@ -11,25 +11,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <main>
       <!-- Hero section -->
-      <div class="hero-section section">
+      <div class="hero-section">
+       
+        <img 
+        class="hero-image"
+        srcset="./images/hero/ketchup@2x.png 2x"
+        src="./images/hero/ketchup.png" 
+        alt="ketchup image" />
+
         <div class="hero-text-half-container">
-          <div class="title-container">
-            <svg class="vector" width="2" height="153">
-              <use href="./images/icons.svg#icon-vector-6"></use>
-            </svg>
-            <h1 class="page-title">cucina di catherina</h1>
-          </div>
+          <h1 class="page-title">cucina di catherina</h1>
           <p class="page-subtitle">
             we know, <br />
             you will <span class="hero-accent">love</span> our product
@@ -37,19 +36,16 @@
           <button type="button" class="hero-btn">Buy now</button>
   
           <div class="hero-text-half-numbers-container">
-            <span class="hero-text-half-numbers">
+            <span class="hero-text-half-elem first">
               <h2 class="title-el">14</h2>
               <p class="main-text">different tastes</p>
             </span>
-            <svg class="vector" width="2" height="78">
-              <use href="./images/icons.svg#icon-vector-1"></use>
-            </svg>
-            <span class="hero-text-half-numbers">
+            <span class="hero-text-half-elem">
               <h2 class="title-el">31</h2>
               <p class="main-text">factories around the world</p>
             </span class="hero-text-half-numbers">
           </div>
-        </вшм>
+        </div>
 
         <ul class="hero-list list">
           <li>italy tomatoes</li>
@@ -58,32 +54,38 @@
           <li>fresh basil</li>
         </ul>
 
+
         <ul class="contact-list list">
           <li class="contact-list-el">
             <a href="" class="contact-link link"
-              >Tumblr
-              <svg></svg>
+              ><svg class="sm-icon" width="24" height="24" aria-label="tumblr icon with link">
+                <use href="./images/icons.svg#icon-tumblr"></use>
+              </svg>
             </a>
           </li>
           <li class="contact-list-el">
             <a href="" class="contact-link link"
-              >Instagram
-              <svg></svg>
+              ><svg class="sm-icon" width="24" height="24" aria-label="instagram icon with link">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="contact-list-el">
             <a href="" class="contact-link link"
-              >YouTube
-              <svg></svg>
+              ><svg class="sm-icon" width="24" height="24" aria-label="youtube icon with link">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
             </a>
           </li>
           <li class="contact-list-el">
             <a href="" class="contact-link link"
-              >Twitter
-              <svg></svg>
+              ><svg class="sm-icon" width="24" height="24" aria-label="twitter icon with link">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
+        
       </div>
     </main>
   </body>

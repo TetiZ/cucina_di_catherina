@@ -110,7 +110,8 @@
   width: 305px;
   height: 535px;
 
-  transition: 500ms ease;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .hero-list {
